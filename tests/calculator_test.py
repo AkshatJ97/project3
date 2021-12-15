@@ -1,7 +1,7 @@
 """Importing Calculator Class from calculator > main.py for Testing"""
 import pytest
 from calculator.main import Calculator
-from calculator.historycalculations.history_calculations import History
+from calculator.history_calculations.history_calculations import History
 
 # pylint: disable=unused-argument,redefined-outer-name
 
@@ -21,7 +21,7 @@ def test_calculator_add(clear_history):
 
     for i in range(length):
         assert Calculator.add_nums(num1[i], num2[i]) == add[i]
-    assert History.get_calculation_count() == 7
+    assert History.get_calculation_count() == 6
     assert History.get_last_calculation_added() == add[-1]
     assert History.get_first_calculation_history() == add[0]
 
