@@ -1,4 +1,4 @@
-
+Value1,Value2,Operation,Result
 1,1,addition,2.0
 10,10,subtraction,0.0
 1,1000,addition,1001.0
@@ -8,3 +8,4 @@
 20,10,subtraction,10.0
 20,5,addition,25.0
 25,5,division,5.0
+10,20,addition,30.0
